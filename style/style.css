@@ -15,6 +15,7 @@ body{
     max-width: 1250px;
     margin:0 auto;
     border:2px solid red;
+    
 }
 .btn{
     /* background-color: #3FF7C4; */
@@ -45,13 +46,14 @@ body{
     font-weight: 600;
     border:1px solid #00FF88;
 }
-
-/* navbar section  */
-.nav-section{
+.section-container{
     max-width: 80%;
     margin: 0 auto;
     border: 2px solid green;
 }
+
+/* navbar section  */
+
 
 nav{
     display: flex;
@@ -153,5 +155,56 @@ nav > ul li a{
     justify-content: center;
     gap:8px;
     margin-top: 24px;
+}
+
+/* about section  */
+.container .section-container .about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:160px;
+    border: 2px solid yellow;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+.section-container .about-section .about-podcast{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    justify-content: center;
+    border: 2px solid red;
+    align-items: center;
+    text-align: center;
+    padding:0 100px;
+}
+.section-container .about-section .about-podcast h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    line-height: auto;
+}
+.section-container .about-section .about-podcast p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.section-container .about-section .episode{
+    display: flex;
+    gap:80px;
+    justify-content: center;
+    align-items: center;
+    border:3px solid green;
+}
+.section-container .about-section .episode h1{
+    font-size: 3rem;
+    color:#00FF88;
+}
+.section-container .about-section .episode p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
