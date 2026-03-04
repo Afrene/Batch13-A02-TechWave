@@ -1,0 +1,9 @@
+/* responsive design  */
+@media screen and (max-width:1250px){
+    .container{
+    max-width: 92%;
+    margin:0 auto;
+    /* border:2px solid red; */
+    }
+
+}
