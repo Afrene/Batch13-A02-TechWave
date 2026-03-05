@@ -17,6 +17,12 @@ body{
     border:2px solid red;
     
 }
+.bg-color-dark{
+    background-color: rgba(26, 11, 46, 1);
+}
+.bg-color-light{
+    background-color: rgba(35, 14, 61, 1);
+}
 .btn{
     /* background-color: #3FF7C4; */
     background: linear-gradient(
@@ -50,6 +56,7 @@ body{
     max-width: 80%;
     margin: 0 auto;
     border: 2px solid green;
+    
 }
 
 /* navbar section  */
@@ -104,6 +111,7 @@ nav > ul li a{
     text-align: center;
     color:#FFFFFF;
     margin-top: 15px;
+    border-radius: 0px;
     
 }
 .banner-section .banner-container{
@@ -165,8 +173,9 @@ nav > ul li a{
     align-items: center;
     gap:160px;
     border: 2px solid yellow;
-    margin-top: 50px;
-    margin-bottom: 120px;
+    margin: 50px auto;
+    
+    
 }
 .section-container .about-section .about-podcast{
     display: flex;
@@ -208,3 +217,33 @@ nav > ul li a{
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* techwave section  */
+
+.section-container .techwave-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:120px auto;
+    gap:40px;
+    /* background-color: linear-gradient(rgba(78, 17, 101, 0.4),rgba(35, 14, 61, 1)); */
+   
+}
+.section-container .techwave-section h2{
+    font-size: 3rem;
+    color:#FFFFFF;
+    font-weight: 700;
+}
+.section-container .techwave-section .techwave{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:30px;
+}
+.techwave div:nth-child(1),
+.techwave div:nth-child(2){
+   grid-row: span 8; 
+}
+.techwave div:nth-child(1),
+.techwave div:nth-child(3){
+   grid-column: span 8; 
+}
