@@ -238,12 +238,48 @@ nav > ul li a{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap:30px;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
-.techwave div:nth-child(1),
-.techwave div:nth-child(2){
-   grid-row: span 8; 
+.techwave div{
+   background-color:rgba(78, 17, 101, 0.4);
+   padding:107px 40px;
+   border-radius: 40px;
 }
-.techwave div:nth-child(1),
+.techwave div:nth-child(2),
 .techwave div:nth-child(3){
-   grid-column: span 8; 
+   /* background-color:rgba(78, 17, 101, 0.4); */
+   padding:45px 40px;
+   border-radius: 40px;
 }
+.techwave div:nth-child(1)
+{
+   grid-row: span 8; 
+   grid-column:span 4;
+   /* border: 2px solid #00FF88; */
+   
+}
+.techwave div:nth-child(2)
+{
+   grid-row: span 4; 
+   grid-column: span 8;
+   border: 2px solid #FFFFFF;
+}
+.techwave div:nth-child(3){
+    grid-row: span 4;
+    grid-column: span 8;
+    border: 2px solid #0e5555;
+}
+.techwave div:nth-child(4){
+    grid-row: span 4;
+    grid-column: span 8;
+    border:2px solid red;
+}
+.techwave div:nth-child(5){
+    grid-row: span 4;
+    grid-column: span 4;
+    border:2px solid yellow;
+}
+
