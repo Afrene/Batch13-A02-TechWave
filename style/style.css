@@ -59,6 +59,7 @@ body{
     
 }
 
+
 /* navbar section  */
 
 
@@ -226,7 +227,7 @@ nav > ul li a{
     flex-direction: column;
     margin:120px auto;
     gap:40px;
-    /* background-color: linear-gradient(rgba(78, 17, 101, 0.4),rgba(35, 14, 61, 1)); */
+    
    
 }
 .section-container .techwave-section h2{
@@ -282,4 +283,95 @@ nav > ul li a{
     grid-column: span 4;
     border:2px solid yellow;
 }
+
+/* feature section  */
+.container .section-container .feature-section{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    margin:120px auto;
+    border: 2px solid yellow;
+}
+.section-container .feature-section .feature-episode{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.feature-section .feature-episode h2{
+    font-size: 3rem;
+    color:#FFFFFF;
+    font-weight: 700;
+    text-align: center;
+}
+.section-container .feature-section .feature-cards{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.feature-cards .card{
+    grid-row: span 4;
+    grid-column: span 4;
+    
+    
+
+}
+.feature-cards .card .video-container{
+    background-color: #250D44;
+    border-radius: 18px;
+    overflow: hidden;
+    
+}
+.feature-cards .card .video{
+    width:100%;
+    aspect-ratio: 16/9;
+      
+    
+}
+.video iframe{
+    
+    width:100%;
+    height:100%;
+    border: none;
+    display: block;
+      
+    
+}
+.video-container .content{
+    padding: 15px;
+}
+.video-container .content h3{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.video-container .content p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.video-container .content .clock{
+    display: flex;
+    gap:6px;
+}
+.video-container .content .clock > img{
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.video-container .content .clock > span{
+    font-size: 1rem;
+    font-weight: 600;
+    /* line-height: 24px; */
+    color: #00FF88;
+}
+
+
+
 
