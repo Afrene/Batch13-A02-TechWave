@@ -9,6 +9,7 @@
     }
 
 }
+
 @media screen and (max-width:768px){
      /* navbar section  */  
     .container{
@@ -107,4 +108,28 @@
     text-align: center;
     
    }
+   /* techwave section  */
+
+   .section-container .techwave-section{
+    gap:25px;
+    margin: 60px auto;
+    padding:0 15px;
+   }
+   .section-container .techwave-section h2{
+    font-size: 1.8rem;
+    text-align: center;
+   }
+   .section-container .techwave-section .techwave{
+    grid-template-columns: 1fr;
+    gap:20px;
+   }
+   .techwave div{
+    grid-column: auto !important;
+    grid-row: auto !important;
+    padding: 25px 20px;
+    border-radius: 20px;
+    
+   }
+   /* feature section  */
+   
 }
