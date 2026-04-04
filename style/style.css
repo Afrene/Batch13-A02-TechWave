@@ -31,7 +31,7 @@ body{
         rgba(251, 9, 132, 1) 51%,
         rgba(145, 0, 248, 1) 100%
     );
-    border-radius: 18px;
+    border-radius: 50px;
     padding:12px 16px;
     color:#FFFFFF;
     border: none;
@@ -42,7 +42,7 @@ body{
 }
 .btn-transparent{
     background: transparent;
-    border-radius: 18px;
+    border-radius: 50px;
     padding:12px 16px;
     color:#FFFFFF;
     border: none;
@@ -59,6 +59,18 @@ body{
     
 }
 
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color:#ffffff;
+}
+.wave{
+  
+  background: linear-gradient(rgba(145, 0, 248, 1),rgba(251, 9, 180, 1),rgba(247, 233, 63, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* navbar section  */
 
@@ -68,16 +80,8 @@ nav{
     justify-content: space-between;
     padding: 30px;
 }
-nav > div > h1{
-    font-size: 2rem;
-    font-weight: 700;
-    color:#ffffff;
-}
-nav > div > h1 > .wave{
-  
-  background: linear-gradient(rgba(145, 0, 248, 1),rgba(251, 9, 180, 1),rgba(247, 233, 63, 1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+nav .hamburger-icon{
+    display: none;
 }
 nav > ul{
     
@@ -110,7 +114,7 @@ nav > ul li a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:#FFFFFF;
+    /* color:#FFFFFF; */
     margin-top: 15px;
     border-radius: 0px;
     
@@ -165,6 +169,16 @@ nav > ul li a{
     gap:8px;
     margin-top: 24px;
 }
+.banner-section .banner-container div h2{
+    font-size: 3.6rem;  
+    font-weight: 800; 
+    color: #FFFFFF;
+}
+.banner-section .banner-container div p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
 
 /* about section  */
 .container .section-container .about-section{
@@ -198,14 +212,15 @@ nav > ul li a{
     font-size: 1rem;
     font-weight: 400;
     line-height: 20px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
 }
 .section-container .about-section .episode{
     display: flex;
     gap:80px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border:3px solid green;
+    width:100%;
 }
 .section-container .about-section .episode h1{
     font-size: 3rem;
@@ -215,7 +230,7 @@ nav > ul li a{
     font-size: 1rem;
     font-weight: 400;
     line-height: 20px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* techwave section  */
@@ -353,7 +368,7 @@ nav > ul li a{
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
 }
 .video-container .content .clock{
     display: flex;
@@ -412,7 +427,7 @@ nav > ul li a{
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
 }
 .host-container .host-content .host-details .icons{
     display: flex;
@@ -427,6 +442,41 @@ nav > ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* footer section  */
+.footer-section{
+    background-image: url('../assets/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /* background-position: center; */
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-section .footer-content div{
+    text-align: center;
+}
+.footer-section .footer-content .social-media-links{
+    display: flex;
+    gap:10px;
+    padding: 32px;
+    
+}
+.social-media-links span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-section .footer-content p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+    text-align: center;
 }
 
 
