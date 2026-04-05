@@ -131,5 +131,66 @@
     
    }
    /* feature section  */
+   .container .section-container .feature-section{
+    gap:25px;
+    margin: 40px auto;
+    padding:0 15px;
+   }
+   .section-container .feature-section .feature-episode{
+    gap:20px;
+   }
+   .feature-section .feature-episode h2{
+    font-size: 1.8rem;
+    text-align: center;
+   }
+   .section-container .feature-section .feature-cards{
+    grid-template-columns: 1fr;
+    gap:20px;
+   }
+   .feature-cards .card{
+    grid-column: auto !important;
+    grid-row: auto !important;
+   
+   }
+   .video-container .content{
+    text-align: center;
+   }
+   .video-container .content h3{
+    font-size: 1.2rem;
+    text-align: left;
+   }
+   .video-container .content p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+   }
+   .video-container .content .clock{
+    justify-content: flex-start;
+
+   }
+   
+   /* host section  */
+   .feature-section .host-container h2{
+    font-size: 2rem;
+   }
+   .host-container .host-content{
+    flex-direction: column;
+    gap:12px;
+    padding: 20px;
+    
+   }
+   .host-container .host-content .host-details h3{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+   }
+   .host-container .host-content .host-details p{
+    font-size: 0.9rem;
+    align-items: center;
+    
+   }
+   .host-container .host-content .host-details .icons{
+    justify-content: center;
+   }
    
 }

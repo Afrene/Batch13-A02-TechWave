@@ -53,10 +53,31 @@ body{
     border:1px solid #00FF88;
 }
 .section-container{
-    max-width: 80%;
+    width: 80%;
+    max-width: 1100px;
     margin: 0 auto;
+    padding:0 20px;
     border: 2px solid green;
     
+}
+.about-section,
+.feature-section,
+.techwave-section,
+.host-container {
+    width:100%;
+    margin: 120px auto;
+    gap:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid yellow;
+}
+.feature-episode,
+.about-podcast,
+.techwave-section,
+.host-container {
+    width:100%;
 }
 
 h1{
@@ -181,7 +202,7 @@ nav > ul li a{
 }
 
 /* about section  */
-.container .section-container .about-section{
+/* .container .section-container .about-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,7 +212,7 @@ nav > ul li a{
     margin: 50px auto;
     
     
-}
+} */
 .section-container .about-section .about-podcast{
     display: flex;
     flex-direction: column;
@@ -235,7 +256,7 @@ nav > ul li a{
 
 /* techwave section  */
 
-.section-container .techwave-section{
+/* .section-container .techwave-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +265,7 @@ nav > ul li a{
     gap:40px;
     
    
-}
+} */
 .section-container .techwave-section h2{
     font-size: 3rem;
     color:#FFFFFF;
@@ -314,7 +335,7 @@ nav > ul li a{
 }
 
 /* feature section  */
-.container .section-container .feature-section{
+/* .container .section-container .feature-section{
     display: flex;
     flex-direction: column;
     gap:100px;
@@ -322,7 +343,7 @@ nav > ul li a{
     align-items: center;
     margin:120px auto;
     border: 2px solid yellow;
-}
+} */
 .section-container .feature-section .feature-episode{
     display: flex;
     flex-direction: column;
@@ -377,6 +398,7 @@ nav > ul li a{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 1.5rem;
+    
 }
 .video-container .content p{
     font-size: 1rem;
@@ -402,14 +424,14 @@ nav > ul li a{
 }
 
 /* host section  */
-.section-container .feature-section .host-container{
+/* .section-container .feature-section .host-container{
     display: flex;
     gap:40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 50px auto;
-}
+} */
 .feature-section .host-container h2{
     font-size: 3.5rem;
     font-weight: 700;
