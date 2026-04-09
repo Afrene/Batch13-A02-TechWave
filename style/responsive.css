@@ -118,6 +118,7 @@
    .section-container .techwave-section h2{
     font-size: 1.8rem;
     text-align: center;
+    padding-top: 20px;
    }
    .section-container .techwave-section .techwave{
     grid-template-columns: 1fr;
@@ -286,6 +287,10 @@
     gap:20px;
     text-align: center;
     
+   }
+   /* techwave section  */
+   .section-container .techwave-section h2{
+    padding-top: 20px;
    }
    /* footer section  */
   .footer-section{

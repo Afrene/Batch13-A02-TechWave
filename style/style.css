@@ -264,6 +264,7 @@ nav > ul li a{
     font-size: 3rem;
     color:#FFFFFF;
     font-weight: 700;
+    padding-top: 120px;
 }
 .section-container .techwave-section .techwave{
     display: grid;
