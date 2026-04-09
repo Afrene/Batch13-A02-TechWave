@@ -9,8 +9,8 @@
     }
 
 }
-
-@media screen and (max-width:768px){
+/* small device */
+@media screen and (max-width:576px){
      /* navbar section  */  
     .container{
        display: flex;
@@ -192,5 +192,110 @@
    .host-container .host-content .host-details .icons{
     justify-content: center;
    }
+   /* footer section  */
+   .footer-section .footer-content .social-media-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    justify-items: center;
+   }
+   .footer-section .footer-content p{
+    text-align: center;
+   }
+   
    
 }
+/* medium device  */
+@media screen and (min-width: 576px) and (max-width: 992px){
+  /* navbar section  */  
+    .container{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 0 auto;
+    }
+    .container .section-container{
+        display: contents;
+        
+    }
+    nav .hamburger-icon{
+        display:block;
+        
+    }
+    nav .hamburger-icon i{
+        color:#FFFFFF;
+        
+    }
+    nav ul{
+        display: none;
+
+    }
+    nav .btn{
+        display: none !important;
+    }
+    /* banner section  */
+    .banner-section{
+        min-height: auto;
+        padding:40px 15px;
+    }
+    .banner-section .banner-container{
+        margin: 0;
+        gap:24px;
+    }
+    .banner-section .rounded-mic-parent{
+        max-width: 100%;
+        width: 280px;
+        padding: 0;
+    }
+    .banner-section .rounded-mic-parent .rounded-shape{
+        width: 96%;
+        height: auto;
+    }
+    .banner-section .rounded-mic-parent .mic{
+        width:70px;
+    }
+    .banner-section .rounded-mic-parent span{
+        font-size: 0.8rem;
+        padding:8px 16px;
+        font-weight: 600;
+        left:200px;
+        top:10px;
+    }
+    .banner-section .banner-container div h2{
+        font-size: 2.6rem;  
+    }
+    .banner-section .banner-container div p{
+      font-size: 0.8rem;
+    
+    }
+    .btn{
+        font-size: 0.8rem;
+        padding:4px 8px;
+    }
+    .banner-section .btn-section{
+        margin-top: 10px;
+    }
+    .btn-transparent{
+        font-size: 0.8rem;
+        padding:4px 8px;
+    }
+    /* about section  */
+    .section-container .about-section .episode{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    text-align: center;
+    
+   }
+   /* footer section  */
+  .footer-section{
+    display: flex;
+    justify-content: center;
+  }
+
+   
+   
+
+
+}
+

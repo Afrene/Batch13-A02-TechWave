@@ -9,12 +9,13 @@
     font-family: "Inter", sans-serif;
 }
 body{
-    background-color:#0d0518ec;
+    /* background-color:#0d0518ec; */
+    background-color: #1A0B2E;
 }
 .container{
     max-width: 1250px;
     margin:0 auto;
-    border:2px solid red;
+    /* border:2px solid red; */
     
 }
 .bg-color-dark{
@@ -52,18 +53,25 @@ body{
     font-weight: 600;
     border:1px solid #00FF88;
 }
+.btn:hover,
+.btn-transparent:hover {
+  transform: translate(-3px);
+  box-shadow: 0 10px 25px rgba(145, 0, 248, 0.4);
+}
 .section-container{
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
     padding:0 20px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     
 }
+.banner-section,
 .about-section,
 .feature-section,
 .techwave-section,
-.host-container {
+.host-container,
+.footer-section {
     width:100%;
     margin: 120px auto;
     gap:100px;
@@ -71,7 +79,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 .feature-episode,
 .about-podcast,
@@ -94,12 +102,16 @@ h1{
 
 
 /* navbar section  */
-
+header{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 10px;
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    
 }
 nav .hamburger-icon{
     display: none;
@@ -135,7 +147,6 @@ nav > ul li a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* color:#FFFFFF; */
     margin-top: 15px;
     border-radius: 0px;
     
@@ -151,7 +162,7 @@ nav > ul li a{
 }
 
  .banner-section .rounded-mic-parent{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position:relative;
     width:550px;
     margin:0 auto;
@@ -202,26 +213,16 @@ nav > ul li a{
 }
 
 /* about section  */
-/* .container .section-container .about-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:160px;
-    border: 2px solid yellow;
-    margin: 50px auto;
-    
-    
-} */
 .section-container .about-section .about-podcast{
     display: flex;
     flex-direction: column;
     gap:16px;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     align-items: center;
     text-align: center;
     padding:0 100px;
+    
 }
 .section-container .about-section .about-podcast h2{
     font-size: 3rem;
@@ -236,12 +237,15 @@ nav > ul li a{
     color: rgba(255, 255, 255, 0.6);
 }
 .section-container .about-section .episode{
+    border-top: 1px solid rgba(255,255,255,0.2);
     display: flex;
     gap:80px;
     justify-content: space-between;
     align-items: center;
-    border:3px solid green;
+    /* border:3px solid green; */
     width:100%;
+    padding-top: 20px;
+    
 }
 .section-container .about-section .episode h1{
     font-size: 3rem;
@@ -256,16 +260,6 @@ nav > ul li a{
 
 /* techwave section  */
 
-/* .section-container .techwave-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin:120px auto;
-    gap:40px;
-    
-   
-} */
 .section-container .techwave-section h2{
     font-size: 3rem;
     color:#FFFFFF;
@@ -316,34 +310,26 @@ nav > ul li a{
 {
    grid-row: span 4; 
    grid-column: span 8;
-   border: 2px solid #FFFFFF;
+   /* border: 2px solid #FFFFFF; */
 }
 .techwave div:nth-child(3){
     grid-row: span 4;
     grid-column: span 8;
-    border: 2px solid #0e5555;
+    /* border: 2px solid #0e5555; */
 }
 .techwave div:nth-child(4){
     grid-row: span 4;
     grid-column: span 8;
-    border:2px solid red;
+    /* border:2px solid red; */
 }
 .techwave div:nth-child(5){
     grid-row: span 4;
     grid-column: span 4;
-    border:2px solid yellow;
+    /* border:2px solid yellow; */
 }
 
 /* feature section  */
-/* .container .section-container .feature-section{
-    display: flex;
-    flex-direction: column;
-    gap:100px;
-    justify-content: center;
-    align-items: center;
-    margin:120px auto;
-    border: 2px solid yellow;
-} */
+
 .section-container .feature-section .feature-episode{
     display: flex;
     flex-direction: column;
@@ -424,14 +410,7 @@ nav > ul li a{
 }
 
 /* host section  */
-/* .section-container .feature-section .host-container{
-    display: flex;
-    gap:40px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto;
-} */
+
 .feature-section .host-container h2{
     font-size: 3.5rem;
     font-weight: 700;
@@ -484,24 +463,33 @@ nav > ul li a{
 .footer-section{
     background-image: url('../assets/footer-bg.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    /* background-position: center; */
+    background-size: cover;
+    background-position: center;
     min-height: 250px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     
 }
-.footer-section .footer-content div{
+.footer-section .footer-content{
     text-align: center;
 }
 .footer-section .footer-content .social-media-links{
     display: flex;
-    gap:10px;
-    padding: 32px;
+    gap:15px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
     
 }
+.social-media-links .social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6px;
+}
+
 .social-media-links span{
     font-size: 0.8rem;
     font-weight: 500;
@@ -509,10 +497,9 @@ nav > ul li a{
 }
 .footer-section .footer-content p{
     font-size: 0.8rem;
-    font-weight: 500;
     color: rgba(255, 255, 255, 0.6);
     line-height: 24px;
-    text-align: center;
+    
 }
 
 
